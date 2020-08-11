@@ -1,0 +1,486 @@
+#img{
+  max-width: 100%;
+  height: auto;
+  z-index: 3;
+  top: 50%;
+  left: 0%;
+  transform: translate(-30%, -70%);
+}
+#img > div
+{
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 20px;  /* and that, will result in a 10px gap */
+}
+#nav #logo{
+  width: 30%;
+  height: 100%;
+}
+
+
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+  height: 100%; 
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+  position: fixed;
+	z-index: 9999;
+	right: 100px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+  display: block;
+	position: relative;
+	color: transparent;
+	height: 50px;
+}
+
+.cbp-fbscroller > nav a:after {
+  content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+.cbp-fbscroller > nav a:hover:after {
+  background: rgba(255,255,255,0.6);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent:after {
+  background: #fff;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+  position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#fbsection1 {
+  z-index: 3;
+}
+
+.description {
+  text-align:center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description-summary {
+  text-align: center;
+  position: absolute;
+}
+.demo-des {
+  text-align: center;
+  position: absolute;
+  top: 58%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+@media screen and (min-width: 601px) {
+  div.header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  div.header {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  div.description {
+    font-size: 10px;
+  }
+}
+
+/* @media screen and (min-width: 500px) {
+  div.description {
+    font-size: 15px;
+  }
+} */
+
+.npm {
+  text-align:center;
+  position: absolute;
+  top: 73%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+#star {
+  text-align:center;
+  position: absolute;
+  top: 73%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+#fbsection2 {
+  background-image: url("./assets/demo.gif"), linear-gradient(315deg, #B82E1F 0%, #000000 74%);
+  background-size: 40%, 100%;
+  background-position: 10% 70%;
+  background-repeat: no-repeat;
+
+}
+  
+  #fbsection3 {
+    background-image: url("./assets/dashboard.gif"), linear-gradient(315deg, #756213 0%, #000000 74%);
+    background-size: 500px, 100%;
+    background-position: 10% 70%;
+    background-repeat: no-repeat;
+  }
+  
+  #fbsection4 {
+    background-image: url("./assets/config.gif"), linear-gradient(315deg, #166D3B 0%, #000000 74%);
+    background-size: 500px, 100%;
+    background-position: 10% 70%;
+    background-repeat: no-repeat;
+  }
+  
+  
+  #fbsection5 {
+    background-image: url("https://www.youtube.com/watch?v=6b9XJNaxdt8"), linear-gradient(315deg, #B82E1F 0%, #000000 74%);
+    background-size: 500px, 100%;
+    background-position: 10% 70%;
+    background-repeat: no-repeat;
+  }
+
+  
+    *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+    body, html { font-size: 100%; padding: 0; margin: 0;}
+
+.clearfix {
+  display: flex;
+align-items: center;
+margin-top: 5%;
+}
+
+#github-button {
+  align-content: right;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.container > header {
+	padding: 2.875em 1.875em 1.875em;
+	position: fixed;
+	z-index: 1000;
+	width: 70%;
+	left: 20%;
+}
+
+.container > header nav {
+	float: right;
+}
+
+
+.container > header nav a {
+	display: block;
+	float: left;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	background: #fff;
+	border-radius: 50%;
+	color: transparent;
+	margin: 0 0.1em;
+	border: 4px solid #fff;
+	text-indent: -8000px;
+}
+
+.container > header nav a:after {
+	content: attr(data-info);
+	color: #fff;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.container > header nav a:hover:after {
+	opacity: 1;
+}
+
+.container > header nav a:hover {
+	background: #47a3da;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* h2{
+  margin-top: 30px;
+  text-align: center;
+}
+header h2{
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 80%;
+  text-align: center;
+} */
+/* header a, a:visited {
+  text-decoration:none;
+  color:#fcfcfc;
+} */
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+.stars {
+background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:0;
+}
+
+.twinkling{
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:1;
+
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:3;
+
+-moz-animation:move-clouds-back 200s linear infinite;
+-ms-animation:move-clouds-back 200s linear infinite;
+-o-animation:move-clouds-back 200s linear infinite;
+-webkit-animation:move-clouds-back 200s linear infinite;
+animation:move-clouds-back 200s linear infinite;
+}
+
+.demoGIF {
+  text-align:center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+
+h2 { 
+text-align: center;
+position: absolute;
+top: 45%;
+left: 70%;
+transform: translate(-50%, -50%);
+z-index: 3;
+}
+
+.devTeam {
+  z-index: 3;
+}
+
+.headshots {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 170px;
+  width: 900px;
+  position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.githubImage:hover {
+  background: linear-gradient(black, rgb(19, 0, 0));
+}
+
+.headshot {
+    flex-basis: 15%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.774);
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.githubImage {
+  height: 45%;
+  margin-left: 13px;
+
+}
+
+.socialBar {
+  position: absolute;
+  top: 86%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  display: flex;
+}
+
+.social {
+  height: 80%;
+  width: 200px;
+  margin-left: 25px;
+}
+
+.githubImage:hover {
+background: linear-gradient(black, rgb(60, 0, 0));
+}
+.linkedInImage:hover {
+background: linear-gradient(black, rgb(58, 0, 0));
+}
+.linkedInImage {
+  height: 40%;
+}
+.devTeam {
+  margin-top: 15%;
+  padding: 32px;
+}
+
+label {
+  flex-basis: 70%;
+  text-align: center;
+}
+
+.names {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+iframe {
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section:after{
+  content:"";
+  position:fixed; /* stretch a fixed position to the whole screen */
+  top:0;
+  height:100vh; /* fix for mobile browser address bar appearing disappearing */
+  left:0;
+  right:0;
+  z-index:-1; /* needed to keep in the background */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
