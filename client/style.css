@@ -4,7 +4,7 @@
   z-index: 3;
   top: 50%;
   left: 0%;
-  transform: translate(-30%, -70%);
+  transform: translate(-30%, -80%);
 }
 #img > div
 {
@@ -110,7 +110,7 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -70%);
 }
 
 @media screen and (min-width: 601px) {
@@ -133,7 +133,7 @@ h3 {
 
 @media screen and (max-width: 850px) {
   div.description {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -161,23 +161,23 @@ h3 {
 
 #fbsection2 {
   background-image: url("./assets/demo.gif"), linear-gradient(315deg, #B82E1F 0%, #000000 74%);
-  background-size: 40%, 100%;
-  background-position: 10% 70%;
+  background-size: 39%, 100%;
+  background-position: 10% 55%;
   background-repeat: no-repeat;
 
 }
   
   #fbsection3 {
     background-image: url("./assets/dashboard.gif"), linear-gradient(315deg, #756213 0%, #000000 74%);
-    background-size: 500px, 100%;
-    background-position: 10% 70%;
+    background-size: 39%, 100%;
+    background-position: 10% 55%;
     background-repeat: no-repeat;
   }
   
   #fbsection4 {
     background-image: url("./assets/config.gif"), linear-gradient(315deg, #166D3B 0%, #000000 74%);
-    background-size: 500px, 100%;
-    background-position: 10% 70%;
+    background-size: 39%, 100%;
+    background-position: 10% 55%;
     background-repeat: no-repeat;
   }
   
@@ -213,9 +213,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: #000;
-}
 
 .container > header {
 	padding: 2.875em 1.875em 1.875em;
@@ -393,7 +390,7 @@ z-index: 3;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
-  height: 170px;
+  height: 175px;
   width: 900px;
   position: absolute;
 top: 55%;
@@ -435,12 +432,22 @@ transform: translate(-50%, -50%);
   margin-left: 25px;
 }
 
-.githubImage:hover {
-background: linear-gradient(black, rgb(60, 0, 0));
+/* .githubImage:hover {
+background-color: blue;
+} */
+
+.social figure {
+	background: #1abc9c;
 }
-.linkedInImage:hover {
-background: linear-gradient(black, rgb(58, 0, 0));
+.social figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+.social figure:hover img {
+	opacity: .5;
+}
+
 .linkedInImage {
   height: 40%;
 }
